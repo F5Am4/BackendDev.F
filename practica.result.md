@@ -30,14 +30,14 @@ CREATE TABLE piezaSerie (
     id_piezaSerie INT NOT NULL,
     nombre VARCHAR(50) NOT NULL,
 	fecha DATE,
-	proveedor TEXT,
+	NombreProveedor TEXT,
     id_proveedor INT,
     PRIMARY KEY (id_proveedor),
     FOREIGN KEY (id_piezaSerie) REFERENCES proveedor(id_proveedor)
 );
 
 
-INSERT INTO piezaSerie (nombre, fecha, proveedor)
+INSERT INTO piezaSerie (nombre, fecha, Nombreproveedor, id_proveedor)
     VALUES (
 	75909910,
 	'Refacciones',
@@ -58,3 +58,4 @@ DROP TABLE piezaSerie;
 
 -- Elimina un dato de una tabla
 DELETE FROM proveedor WHERE id_proveedor = 1 
+// clase 14/08/2023
