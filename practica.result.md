@@ -58,4 +58,4 @@ DROP TABLE piezaSerie;
 
 -- Elimina un dato de una tabla
 DELETE FROM proveedor WHERE id_proveedor = 1 
-// clase 14/08/2023
+// clase 16/08/2023 
