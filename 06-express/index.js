@@ -58,4 +58,3 @@ app.post('/cars', function(request, response){
 app.listen(3000, ()=> {
     console.log('server running')
 })
-// clase min 01:37:44 16/08/2023
