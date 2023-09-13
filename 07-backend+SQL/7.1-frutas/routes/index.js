@@ -5,8 +5,8 @@ const router = express.Router();
 
 router.get('/frutas/:id', frutaController.getFrutasById) //express.Router().get = app.get();
 router.post('/frutas/', frutaController.createFrutas);
-router.put('/frutas/:id', controlador)
-router.delete('/frutas/:id', controlador)
+router.put('/frutas/:id', frutaController.updateFruta);
+router.delete('/frutas/:id', frutaController.deleteFruta);
 
 export default {
     router
