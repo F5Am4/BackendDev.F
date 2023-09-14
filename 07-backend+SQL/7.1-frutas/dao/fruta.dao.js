@@ -1,4 +1,4 @@
-import db from "../database/db";
+import db from "../database/db.js";
 
 class FrutaDAO{
     async createFruta(nombre,descripcion,cantidad,precio){
@@ -42,4 +42,3 @@ class FrutaDAO{
 }
 
 export default new FrutaDAO();
-//23/08/2023 min 

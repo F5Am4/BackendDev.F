@@ -1,4 +1,4 @@
-import frutaServices from "../service/fruta.services";
+import frutaServices from "../service/fruta.services.js";
 
 class FrutaController{
 
@@ -70,4 +70,3 @@ class FrutaController{
 
 export default new FrutaController();
 
-// clase 23/08/2023 min 1:01:02
