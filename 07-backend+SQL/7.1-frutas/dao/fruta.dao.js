@@ -24,10 +24,10 @@ class FrutaDAO{
        return fruta
     }
 
-    async updateFruta(id){
+    async updateFruta(id, updates){
         await db('frutas')
         .where({id})
-        .update(updates)
+        .update(updates);
 
        return true
     }

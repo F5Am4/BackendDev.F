@@ -1,32 +1,17 @@
 // Update with your config settings.
-import dotenv from 'dotenv'
-
-if (process.env.NODE_ENV !== 'production') {
-  dotenv.config()
-}
 
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
  */
-export default {
+module.exports = {
 
   development: {
-    client: 'pg',
-    useNullAsDefault: true,
+    client: 'sqlite3',
     connection: {
-      database: 'frutas',
-      user:     'postgres',
-      password: 'Galatea206'
-    },
-    pool:{
-      min: 2,
-      max: 10,
-    },
-    migrations: {
-      tableName: 'knex_migrations',
-    },
+      filename: './dev.sqlite3'
+    }
   },
-/*
+
   staging: {
     client: 'postgresql',
     connection: {
@@ -42,8 +27,7 @@ export default {
       tableName: 'knex_migrations'
     }
   },
-*/  
-/*
+
   production: {
     client: 'postgresql',
     connection: {
@@ -59,5 +43,5 @@ export default {
       tableName: 'knex_migrations'
     }
   }
-*/
+
 };

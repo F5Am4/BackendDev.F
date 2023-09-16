@@ -15,7 +15,7 @@ class FrutaService{
         }
 
     async deleteFruta(id){
-        return frutaDao.createFruta(id)
+        return frutaDao.deleteFruta(id)
         }
 }
 
